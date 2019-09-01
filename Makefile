@@ -10,5 +10,10 @@ resume.pdf: OpenFonts/resume.tex $(RESUME_SRCS)
 	cd $(OPENFONTS_DIR) && $(CC) resume.tex && $(BB) resume && $(CC) resume.tex && $(CC) resume.tex
 
 clean:
-	rm -rf $(EXAMPLES_DIR)/*.pdf
-	rm -rf $(SHIBING__DIR)/*.pdf
+	rm -rf $(OPENFONTS_DIR)/*.pdf
+	rm -rf $(OPENFONTS_DIR)/*.aux
+	rm -rf $(OPENFONTS_DIR)/*.blg
+	rm -rf $(OPENFONTS_DIR)/*.bbl
+	rm -rf $(OPENFONTS_DIR)/*.log
+	rm -rf $(OPENFONTS_DIR)/*.out
+
