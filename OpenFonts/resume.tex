@@ -67,7 +67,7 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Shibin}{George}{ \urlstyle{same}\href{https://www.linkedin.com/in/sg1993}{\faLinkedinSquare } | \href{https://github.com/sg1993}{\faGithubSquare }\\
+\namesection{Shibin}{George}{ \urlstyle{same}\href{https://www.linkedin.com/in/sg1993}{\faLinkedinSquare \space LinkedIn:// sg1993 } |\space \space \href{https://github.com/sg1993}{\faGithubSquare \space GitHub:// sg1993  }\\
 \href{mailto:shibingeorge@cs.umass.edu}{\faEnvelope \space shibingeorge@cs.umass.edu} | {\faMobile \space (+1) 413.539.8032}
 }
 
@@ -169,8 +169,8 @@ Matlab \textbullet{} Javascript \\
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Contributed bug-fixes to the Android Open Source Project, the official repository that hosts the Android OS. Take a look at my contributions \textbf{\href{https://android-review.googlesource.com/q/shibing}{here}}.
-\item Designed and implemented Over-The-Air (OTA) upgrade solutions for Linux Android platform. I was awarded a \textbf{\href{https://www.slideshare.net/slideshow/embed_code/key/uhvsweQaLamkiG} {Super Qualstar}} (highest recognition for individual-contribution within Qualcomm) for my work on A/B OTA upgrade solution.
-\item Developing/maintaining \textbf{\href{https://source.codeaurora.org/quic/la/platform/bionic/commit/?h=android-framework.lnx.3.1&id=0c0fee17b7f39e841f6ef5d305adb1d5189dfb25}{tools}} that facilitate debugging (of memory (heap)-leaks and heap-corruptions)
+\item Designed and implemented Over-The-Air (OTA) software-upgrade solutions for Linux Android platform. I was awarded a \textbf{\href{https://www.slideshare.net/slideshow/embed_code/key/uhvsweQaLamkiG} {Super Qualstar}} (highest recognition for individual-contribution within Qualcomm) for my work on A/B OTA upgrade solution in the user-space. See \textbf{\href{https://source.codeaurora.org/quic/le/OTA/recovery/commit/?h=le-ota.lnx.1.0&id=456b969dcee2cd5e0a7ef1a480797e6eeca550fc}{here}} and \textbf{\href{https://source.codeaurora.org/quic/le/OTA/build/commit/?h=le-ota.lnx.1.0&id=4bb1fdf392bd403f3c2bb2962d210308e4463370}{here}} for my open-sourced work on A/B OTA upgrade solution.
+\item Developing/maintaining tools that facilitate debugging (of memory (heap)-leaks and heap-corruptions) on Android. See \textbf{\href{https://source.codeaurora.org/quic/la/platform/bionic/commit/?h=android-framework.lnx.3.1&id=0c0fee17b7f39e841f6ef5d305adb1d5189dfb25}{SIGWINCH}} - a libc wrapper in user-space, that I wrote, to trap malloc()/free() calls to detect memory-leaks.
 \end{tightemize}
 \sectionsep
 
@@ -190,8 +190,7 @@ Matlab \textbullet{} Javascript \\
 \section{Projects}
 \runsubsection{CBIR using Local-Tetra Patterns on Hadoop MapReduce framework}
 \descript{}
-Content-based Image retrieval (CBIR) involves extracting features (Local Tetra Patterns in this case) from every image in a dataset and then retrieving images from the dataset that is closest to a user-specified query-image.
-There were 3 stages involved: taking a huge dataset of images and converting them to MapReduce's native SequenceFile type (\textbf{\href{https://github.com/sg1993/sequencify-CBIR-on-hadoop}{github-stage-1}}), extracting image features from SequenceFiles and storing the features on Hadoop's Distributed FileSystem (\textbf{\href{https://github.com/sg1993/CBIR-on-Hadoop}{github-stage-2}}), and then fetching the results to a user-specified query(\textbf{\href{https://github.com/sg1993/CBIR-query-on-Hadoop}{github-stage-3}}). Also wrote a \textbf{\href{https://github.com/sg1993/CBIR-query-Image-Viewer}{image-viewer GUI}} using Swing to view the results from a CBIR query. See [1] in Publications.
+Content-based Image retrieval (CBIR) is about retrieving images from dataset closest to user-specified query image. There were 3 stages involved: converting image-corpus to MapReduce's native SequenceFile type \textbf{\href{https://github.com/sg1993/sequencify-CBIR-on-hadoop}{(here)}}, extracting image features from SequenceFiles and storing the features on Hadoop's Distributed FileSystem \textbf{\href{https://github.com/sg1993/CBIR-on-Hadoop}{(here)}}, and then fetching the results to a user-specified query\textbf{\href{https://github.com/sg1993/CBIR-query-on-Hadoop}{(here)}}. Also wrote a \textbf{\href{https://github.com/sg1993/CBIR-query-Image-Viewer}{image-viewer GUI}} using Swing to view the results from a CBIR query. See [1] in Publications.
 \sectionsep
 
 \runsubsection{Weighted finite automata encoding of images}
@@ -201,24 +200,34 @@ The idea was to explore how feature extraction from an image can be done using W
 
 \runsubsection{Save The Session}
 \descript{}
-\textbf{\href{https://chrome.google.com/webstore/detail/save-the-session/gfokkgedgncpmhnbomipnbnpkedjpbil}{Save The Session}} is a Chrome extension for saving user sessions and reloading them later. It has about 4000 active users \enspace - \enspace 
-{\textbf{\href{https://github.com/sg1993/Save-The-Session}{Github}}}
+\textbf{\href{https://chrome.google.com/webstore/detail/save-the-session/gfokkgedgncpmhnbomipnbnpkedjpbil}{Save The Session}} is a Chrome extension for saving user sessions and reloading them later. It has a little over 4000 active users. Take a look at the Github repo  {\textbf{\href{https://github.com/sg1993/Save-The-Session}{here}}}.
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Awards} 
-\begin{tabular}{rll}
-2014	     & top 52/2500  & KPCB Engineering Fellow\\
-2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
-2013	     & National  & Jump Trading Challenge Finalist\\
-2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
-2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
-2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
-\end{tabular}
-\sectionsep
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot %Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%\end{tabular}
+%\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Links to some of my open-sourced work} 
+%SIGWINCH:// \href{https://source.codeaurora.org/quic/la/platform/bionic/commit/?h=android-framework.lnx.3.1&id=0c0fee17b7f39e841f6ef5d305adb1d5189dfb25}{\bf a libc wrapper for debugging memory-leak} \\
+%Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
+%LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
+%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+%Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
 
 \end{minipage} 
 \end{document}  \documentclass[]{article}
