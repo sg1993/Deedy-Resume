@@ -95,7 +95,7 @@
 \location {Warangal, India}
 \descript{B.Tech in Computer Science}
 \location{August, 2011 - April, 2015 }
-\location{ Cum. GPA: 8.48 / 10.0 }
+\location{ GPA: 8.48 / 10.0 }
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -187,17 +187,22 @@ Matlab \textbullet{} Javascript \\
 %     RESEARCH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Research}
-\runsubsection{Cornell Robot Learning Lab}
-\descript{| Researcher}
-\location{Jan 2014 – Jan 2015 | Ithaca, NY}
-Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+\section{Projects}
+\runsubsection{CBIR using Local-Tetra Patterns on Hadoop MapReduce framework}
+\descript{}
+Content-based Image retrieval (CBIR) involves extracting features (Local Tetra Patterns in this case) from every image in a dataset and then retrieving images from the dataset that is closest to a user-specified query-image.
+There were 3 stages involved: taking a huge dataset of images and converting them to MapReduce's native SequenceFile type (\textbf{\href{https://github.com/sg1993/sequencify-CBIR-on-hadoop}{github-stage-1}}), extracting image features from SequenceFiles and storing the features on Hadoop's Distributed FileSystem (\textbf{\href{https://github.com/sg1993/CBIR-on-Hadoop}{github-stage-2}}), and then fetching the results to a user-specified query(\textbf{\href{https://github.com/sg1993/CBIR-query-on-Hadoop}{github-stage-3}}). Also wrote a \textbf{\href{https://github.com/sg1993/CBIR-query-Image-Viewer}{image-viewer GUI}} using Swing to view the results from a CBIR query. See [1] in Publications.
 \sectionsep
 
-\runsubsection{Cornell Phonetics Lab}
-\descript{| Head Undergraduate Researcher}
-\location{Mar 2012 – May 2013 | Ithaca, NY}
-Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+\runsubsection{Weighted finite automata encoding of images}
+\descript{}
+The idea was to explore how feature extraction from an image can be done using Weighted finite automata (WFA) encoding of the same image. WFA encoding is a technique primarily meant for image compression but my focus was on exploring its applicability on tamper-detection in images. See [2] in Publications.
+\sectionsep
+
+\runsubsection{Save The Session}
+\descript{}
+\textbf{\href{https://chrome.google.com/webstore/detail/save-the-session/gfokkgedgncpmhnbomipnbnpkedjpbil}{Save The Session}} is a Chrome extension for saving user sessions and reloading them later. It has about 4000 active users \enspace - \enspace 
+{\textbf{\href{https://github.com/sg1993/Save-The-Session}{Github}}}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
